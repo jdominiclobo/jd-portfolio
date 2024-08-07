@@ -1,5 +1,9 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+
+import Link from "next/link";
 
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
@@ -9,25 +13,26 @@ const Home = () => {
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
+        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-0 xl:pb-8">
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span>Frontend Developer</span>
             <h1 className="h1">
               Hey! I'm <br />
               <span className="text-accent">Joel Dominic Lobo</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
               I am a Frontend developer excelling in making digital user
-              interfaces
+              interfaces.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="md"
-                className="uppercase flex items-center gap-2"
-              >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
+              <Button href="Joel.pdf" variant="outline" size="md">
+                <Link
+                  href="assets/Joel.pdf"
+                  target="_blank"
+                  className="uppercase flex items-center gap-2"
+                >
+                  <span> Download CV</span>
+                  <FiDownload className="text-xl" />
+                </Link>
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Socials
