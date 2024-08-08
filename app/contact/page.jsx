@@ -47,17 +47,29 @@ const Contact = () => {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-[30px]">
           <div className="xl:h-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+            <form
+              action="https://formsubmit.co/b12f634011b471eefe162def991acfc6"
+              method="POST"
+              className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
+            >
               <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-white/60">
                 Commodo excepteur irure ea sunt reprehenderit non adipisicing
                 ipsum eu veniam laborum ullamco.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
-                <Input type="email" placeholder="Email address" />
-                <Input type="phone" placeholder="Phone number" />
+                <Input
+                  type="firstname"
+                  name="firstName"
+                  placeholder="Firstname"
+                />
+                <Input type="lastname" name="lastName" placeholder="Lastname" />
+                <Input type="email" name="email" placeholder="Email address" />
+                <Input
+                  type="phone"
+                  name="phoneNumber"
+                  placeholder="Phone number"
+                />
               </div>
               <Select>
                 <SelectTrigger className="w-full">

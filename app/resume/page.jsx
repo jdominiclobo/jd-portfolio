@@ -7,6 +7,7 @@ import {
   FaReact,
   FaFigma,
   FaNodeJs,
+  FaAws,
 } from "react-icons/fa";
 
 import {
@@ -19,7 +20,7 @@ import {
 const about = {
   title: "About me",
   description:
-    "Minim ad in consectetur eu. Culpa cillum excepteur sint ut fugiat cupidatat aute nisi eu dolor nisi elit.",
+    "Engineer based out of Bangalore, India. I love  Basketball, Photography, Cars and Tech",
   info: [
     {
       fieldName: "Name",
@@ -55,7 +56,7 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "Sint sit dolor aliqua commodo laboris sunt dolore dolor veniam et eiusmod.",
+    "I used to be a Mechanical engineer before I found interest in the web",
   items: [
     {
       company: "Antstack Technologies",
@@ -68,44 +69,19 @@ const experience = {
       duration: "August 2021 - December 2021",
     },
     {
-      company: "Antstack Technologies",
-      position: "Software Developer - Frontend",
-      duration: "February 2022 - May 2023",
+      company: "DCT Academy",
+      position: "Trainee Web Developer",
+      duration: "2019 - 2020",
     },
     {
-      company: "Leo Digital communications",
-      position: "Web Developer",
-      duration: "August 2021 - December 2021",
+      company: "Metalex Steel strips",
+      position: "Production planning Engineer",
+      duration: " 2018 -  2019",
     },
     {
-      company: "Antstack Technologies",
-      position: "Software Developer - Frontend",
-      duration: "February 2022 - May 2023",
-    },
-    {
-      company: "Leo Digital communications",
-      position: "Web Developer",
-      duration: "August 2021 - December 2021",
-    },
-    {
-      company: "Antstack Technologies",
-      position: "Software Developer - Frontend",
-      duration: "February 2022 - May 2023",
-    },
-    {
-      company: "Leo Digital communications",
-      position: "Web Developer",
-      duration: "August 2021 - December 2021",
-    },
-    {
-      company: "Antstack Technologies",
-      position: "Software Developer - Frontend",
-      duration: "February 2022 - May 2023",
-    },
-    {
-      company: "Leo Digital communications",
-      position: "Web Developer",
-      duration: "August 2021 - December 2021",
+      company: "BEML",
+      position: "Graduate Engineering Trainee",
+      duration: " 2017 -  2018",
     },
   ],
 };
@@ -114,7 +90,7 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "Education",
   description:
-    "Sint sit dolor aliqua commodo laboris sunt dolore dolor veniam et eiusmod.",
+    "With a mechanical engineering degree, I managed to get into learning Software development and it's practices",
   items: [
     {
       institution: "VTU",
@@ -132,7 +108,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Aliquip aliqua occaecat duis do culpa voluptate aute veniam nostrud.",
+    "Honed a few Frontend technologies and been exploring Backend technologies and the Cloud",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -151,6 +127,10 @@ const skills = {
       name: "react.js",
     },
     {
+      icon: <SiRedux />,
+      name: "Redux",
+    },
+    {
       icon: <SiTypescript />,
       name: "typescript",
     },
@@ -165,6 +145,10 @@ const skills = {
     {
       icon: <FaFigma />,
       name: "figma",
+    },
+    {
+      icon: <FaAws />,
+      name: "AWS",
     },
     {
       icon: <FaNodeJs />,
@@ -306,6 +290,7 @@ const Resume = () => {
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>
+                <h2 className="text-2xl font-bold">More Info</h2>
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                     {about.info.map((item, index) => {
