@@ -8,19 +8,25 @@ const services = [
   {
     num: "01",
     title: "Web Development",
-    description: "Et in veniam deserunt labore nulla exercitation.",
+    description: "I build web applications using ReactJs and it's libraries",
     href: "",
   },
   {
     num: "02",
-    title: "UI/UX Design",
-    description: "Et in veniam deserunt labore nulla exercitation.",
+    title: "UI Development",
+    description: "Html CSS are some key tech I use",
     href: "",
   },
   {
     num: "03",
-    title: "Frontend Development",
-    description: "Et in veniam deserunt labore nulla exercitation.",
+    title: "Content writing",
+    description: "I can write content. Tech and Non-Tech",
+    href: "",
+  },
+  {
+    num: "04",
+    title: "Backend development",
+    description: "Not my strong area but, doable using NodeJS",
     href: "",
   },
 ];
@@ -47,12 +53,12 @@ const Services = () => {
                   <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
                     {service.num}
                   </div>
-                  <Link
+                  {/* <Link
                     href={service.href}
                     className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
                   >
                     <BsArrowDownRight className="text-primary text-3xl" />
-                  </Link>
+                  </Link> */}
                 </div>
                 <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
                   {service.title}
